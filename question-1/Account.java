@@ -6,3 +6,7 @@ public Account(String requestedName){
     username = requestedName + i;
   }
 }
+//part B
+public String getShortenedName(){
+  
+}
