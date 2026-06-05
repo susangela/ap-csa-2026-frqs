@@ -1,10 +1,14 @@
-public int moreHistoryThanMathAbsence(){
-  int absences = 0;
-  for (int h = 0; h < historyList.size(); h++){
-    for (int m = 0; m < mathList.size(); m++){
-      if (){
-        
-      }
+public int moreHistoryThanMathAbsences() {
+    int count = 0;
+    for (CourseRecord historyRec : historyList) {
+        String histID = historyRec.getStudentID();
+        for (CourseRecord mathRec : mathList) {
+            if (mathRec.getStudentID().equals(histID)) {
+                if (historyRec.getAbsences() > mathRec.getAbsences()) {
+                    count++;
+                }
+            }
+        }
     }
-  }
+    return count;
 }
