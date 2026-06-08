@@ -1,4 +1,4 @@
-#Question 3: [topic]
+#Question 3: CourseRecord.java
 ## My Approach
 How i thought about the problem and what i decided to do.
 ## Course Connections
